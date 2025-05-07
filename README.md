@@ -1,10 +1,10 @@
-# ObjectTextify
+# 📝 ObjectTextify
 
 **ObjectTextify** is a C# library designed for serializing objects into plain text with custom formatting options. It provides various attributes to format properties in objects, handle complex structures like tables and nested objects, and support for advanced features such as templates and conditional formatting.
 
 This library is ideal for generating reports, logs, or any text-based output that requires flexibility in formatting object data.
 
-## Installation
+## 📦 Installation
 
 You can install **ObjectTextify** via NuGet:
 
@@ -12,7 +12,7 @@ You can install **ObjectTextify** via NuGet:
 dotnet add package ObjectTextify
 ```
 
-## Features and Attributes
+## ✨ Features and Attributes
 
 **AffixAttribute** | Adds custom prefix and/or suffix to a property value.
 
@@ -38,8 +38,20 @@ dotnet add package ObjectTextify
 
 **TitleAttribute** | Adds a title to a class or property, with optional length and alignment.
 
-## Examples
+## 💡 Examples
 
-## Contributing
+```C#
+var person = new Person
+{
+    Name = "John Doe",
+    Age = 30,
+    BirthDate = DateTime.Now
+};
+
+var formattedText = TextFormatter.Format(person);
+Console.WriteLine(formattedText);
+```
+
+## 🤝 Contributing
 
 If you'd like to contribute to the ObjectTextify project, feel free to open an issue or submit a pull request.

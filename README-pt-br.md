@@ -1,19 +1,18 @@
-# ObjectTextify
+# 📝 ObjectTextify
 
 **ObjectTextify** é uma biblioteca C# projetada para serializar objetos em texto simples com opções de formatação personalizadas. Ela oferece diversos atributos para formatar propriedades de objetos, lidar com estruturas complexas como tabelas e objetos aninhados, e suporta recursos avançados como templates e formatação condicional.
 
 Esta biblioteca é ideal para gerar relatórios, logs ou qualquer saída baseada em texto que exija flexibilidade na formatação dos dados dos objetos.
 
-## Instalação
+## 📦 Instalação
 
 Você pode instalar **ObjectTextify** via NuGet:
 
 ```bash
 dotnet add package ObjectTextify
-
 ```
 
-## Features and Attributes
+## ✨ Features and Attributes
 
 **AffixAttribute** | Adiciona um prefixo e/ou sufixo personalizados ao valor de uma propriedade.
 
@@ -39,8 +38,20 @@ dotnet add package ObjectTextify
 
 **TitleAttribute** | Adiciona um título a uma classe ou propriedade, com comprimento e alinhamento opcionais.
 
-## Exemplos
+## 💡 Exemplos
 
-## Contribuindo
+```C#
+var pessoa = new Pessoa
+{
+    Nome = "João Silva",
+    Idade = 30,
+    DataNascimento = DateTime.Now
+};
+
+var textoFormatado = TextFormatter.Format(pessoa);
+Console.WriteLine(textoFormatado);
+```
+
+## 🤝 Contribuindo
 
 Se você deseja contribuir para o projeto ObjectTextify, fique à vontade para abrir um issue ou enviar um pull request.

@@ -1,9 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>ObjectTextify</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Talisson Lima</Authors>
+    <Description>A library for serializing objects into plain text with custom formatting.</Description>
+    <PackageTags>c#, serialization, text-formatting, text-serialization, object-to-text, report-generation, pretty-print, table-serialization, formatted-output, object-rendering, text-output</PackageTags>
+    <PackageLicenseUrl>https://github.com/TalissonLima/ObjectTextify/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/TalissonLima/ObjectTextify</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TalissonLima/ObjectTextify</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

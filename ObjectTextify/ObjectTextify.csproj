@@ -8,7 +8,6 @@
     <Authors>Talisson Lima</Authors>
     <Description>A library for serializing objects into plain text with custom formatting.</Description>
     <PackageTags>c#, serialization, text-formatting, text-serialization, object-to-text, report-generation, pretty-print, table-serialization, formatted-output, object-rendering, text-output</PackageTags>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/TalissonLima/ObjectTextify</PackageProjectUrl>
     <RepositoryUrl>https://github.com/TalissonLima/ObjectTextify</RepositoryUrl>

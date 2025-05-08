@@ -2,7 +2,7 @@
 
 [![NuGet](https://img.shields.io/nuget/v/ObjectTextify)](https://www.nuget.org/packages/ObjectTextify)
 [![Downloads](https://img.shields.io/nuget/dt/ObjectTextify)](https://www.nuget.org/packages/ObjectTextify)
-![Build](https://img.shields.io/github/actions/workflow/status/TalissonLima/ObjectTextify/build.yml)
+![Build](https://img.shields.io/github/actions/workflow/status/TalissonLima/ObjectTextify/ci.yml)
 ![License](https://img.shields.io/github/license/TalissonLima/ObjectTextify)
 ![Stars](https://img.shields.io/github/stars/TalissonLima/ObjectTextify?style=social)
 

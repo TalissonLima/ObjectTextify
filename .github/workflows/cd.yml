@@ -19,8 +19,11 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Extract version from tag
+      run: echo "${GITHUB_REF#refs/tags/v}" > version.txt
+
+    - name: Read version from file
       id: extract_version
-      run: echo "##[set-output name=VERSION;]${GITHUB_REF#refs/tags/v}"
+      run: echo "VERSION=$(cat version.txt)" >> $GITHUB_ENV
 
     - name: Restore dependencies
       run: dotnet restore
@@ -29,7 +32,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Pack NuGet package
-      run: dotnet pack --configuration Release --no-build /p:PackageVersion=${{ steps.extract_version.outputs.VERSION }}
+      run: dotnet pack --configuration Release --no-build /p:PackageVersion=${{ env.VERSION }}
 
     - name: Publish to NuGet
       env:

@@ -12,6 +12,10 @@
     <PackageLicenseUrl>https://github.com/TalissonLima/ObjectTextify/blob/main/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/TalissonLima/ObjectTextify</PackageProjectUrl>
     <RepositoryUrl>https://github.com/TalissonLima/ObjectTextify</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>

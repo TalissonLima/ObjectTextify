@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace ObjectTextify;
 
-public static class TextFormatter //teste CI
+public static class TextFormatter
 {
     public static TextFormatterOptions Options { get; } = new();
 
